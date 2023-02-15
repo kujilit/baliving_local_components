@@ -57,4 +57,25 @@
         font-size: 16px;
         margin-left: 8px;
     }
+
+    .vip_banner {
+        width: 328px;
+        border: 1px solid var(--turquoise);
+        border-radius: 6px;
+    }
+
+    .vip_banner__content {
+        margin: 16px 24px;
+    }
+
+    .vip_banner__text {
+        line-height: 20px;
+    }
+
+    .vip_banner__ref{
+        text-decoration: none;
+        color: var(--turquoise);
+        line-height: 20px;
+        font-weight: 600;
+    }
 }
