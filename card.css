@@ -1,0 +1,122 @@
+:root {
+    --turquoise: #00AAAA;
+    --grey-l-70: #B3B3B3;
+    --salad-green: #67AE2B;
+    --sand: #CC9F7A;
+    --white-like-button: rgb(255, 255, 255, 55%);
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+@media (min-width:480px){
+    body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card {
+        border-radius: 12px;
+        width: 328px;
+        box-shadow: 2px 2px 16px rgba(0, 85, 85, .16);
+    }
+
+    .card__header {
+        border-radius: 12px 12px 0 0;
+        background-image: url("src/Image.png");
+        height: 222px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .card__header .components {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 16px 16px 16px;
+        align-items: end;
+    }
+
+    .card__header .tags {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: space-between;
+    }
+
+    .card__header .tags button {
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        height: 36px;
+        border: none;
+        border-radius: 6px;
+    }
+
+    .card__header .tags .trust {
+        background-color: var(--salad-green);
+    }
+
+    .card__header .tags .available {
+        margin-top: 8px;
+        background-color: var(--sand);
+    }
+
+    .card__header .components .like__button {
+        background-color: var(--white-like-button);
+        border-radius: 24px;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    .card__header .components .like__button img {
+        margin: 0
+    }
+
+    .card__main {
+        padding: 28px 32px 32px 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card__main .heading {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .card__main .rooms {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .card__main .price {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 24px;
+    }
+
+    .card__main .actuality {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--grey-l-70);
+        margin-bottom: 28px;
+    }
+
+    .card__main button {
+        font-size: 16px;
+        font-weight: 600;
+        height: 60px;
+        border: none;
+        border-radius: 6px;
+        background-color: var(--turquoise);
+        color: white;
+    }
+}
