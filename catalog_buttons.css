@@ -1,7 +1,9 @@
 :root {
     --turquoise: #00AAAA;
     --turquoise-16: rgb(0, 170, 170, 16%);
+    --grey-l-60: #999999;
     --grey-l-70: #B3B3B3;
+    --grey-l-80: #CCCCCC;
     --salad-green: #67AE2B;
     --salad-light: #EAF7DF;
     --sand: #CC9F7A;
@@ -13,13 +15,60 @@
     font-family: 'Raleway', sans-serif;
 }
 
-@media (min-width:480px) {
+@media screen and (min-width:480px) {
+    .search_bar {
+        display: flex;
+        flex-direction: column;
+        width: 328px;
+        margin-bottom: 32px;
+    }
+
+    .search_bar__selector:first-child {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+    .search_bar__selector {
+        border: 1px solid var(--grey-l-80);
+        height: 52px;
+        appearance: none;
+        background: url(./src/selector_arrow.svg) no-repeat right;
+        background-position-x: calc(100% - 20px);
+        padding: 0 20px;
+        font-weight: 400;
+    }
+
+    .search_bar__input {
+        color: var(--grey-l-60);
+        padding: 0 20px;
+        border: 1px solid var(--grey-l-80);
+        height: 52px;
+    }
+
+    .search_bar__button {
+        background-color: var(--turquoise);
+        color: white;
+        font-weight: 600;
+        height: 52px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border: none;
+    }
+
+    .filtration {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
     .filt__button {
         border: 1px solid var(--turquoise);
         border-radius: 6px;
         background: none;
         padding: 8px 16px;
         font-weight: 600;
+        margin-right: 12px;
     }
 
     .filt__button:hover {
@@ -62,6 +111,7 @@
         width: 328px;
         border: 1px solid var(--turquoise);
         border-radius: 6px;
+        margin-bottom: 32px;
     }
 
     .vip_banner__content {

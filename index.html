@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baliving</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="search_bar">
+        <select name="" id="neighbourhood" class="search_bar__selector">
+            <option value="disabled">Район</option>
+            <option value="">Placeholder</option>
+        </select>
+        <select name="" id="rooms" class="search_bar__selector">
+            <option value="disabled">Кол-во спален</option>
+        </select>
+        <select name="" id="price" class="search_bar__selector">
+            <option value="">Цена</option>
+        </select>
+        <select name="" id="type" class="search_bar__selector">
+            <option value="">Тип жилья</option>
+        </select>
+        <select name="" id="available" class="search_bar__selector">
+            <option value="">Доступно</option>
+        </select>
+        <input type="text" class="search_bar__input" placeholder="Поиск по ключевому слову">
+        <button class="search_bar__button">Найти жилье</button>
+    </div>
+    <div class="tips">
+        <button class="tips__button tips__button__green">
+            <img src="./src/location.svg" alt="">
+            <span>Какой район выбрать?</span>
+        </button>
+
+        <button class="tips__button tips__button__red">
+            <img src="./src/dangerous.svg" alt="">
+            <span>Как безопасно снять жилье?</span>
+        </button>
+    </div>
+
+    <div class="vip_banner">
+        <div class="vip_banner__content">
+            <p class="vip_banner__text">
+                Хотите получать все подходящие варианты жилья прямо в личные сообщения?
+            </p>
+            <a href="#" class="vip_banner__ref">
+                Заказать тариф "VIP" с ботом-помощником &rarr;
+            </a>
+        </div>
+    </div>
+    <div class="filtration">
+        <button class="filt__button">Сначала новые</button>
+        <button class="filt__button">Дешевле</button>
+        <button class="filt__button">Деороже</button>
+        <button class="filt__button">Надежные арендодатели</button>
+    </div>
+    <div class="card">
+        <div class="card__header">
+            <div class="components">
+                <div class="tags">
+                    <button class="trust">Надежный арендодатель</button>
+                    <button class="available">Доступно сейчас</button>
+                </div>
+                <div class="like__button"><img src="src/icons.svg" alt=""></div>
+            </div>
+        </div>
+        <div class="card__main">
+            <span class="heading">Вилла, Денпасар</span>
+            <span class="rooms">2 спальни</span>
+            <span class="price">Цена в месяц: 400$</span>
+            <span class="actuality">Опубликовано сегодня</span>
+            <button>Подробнее</button>
+        </div>
+    </div>
+</body>
+</html>
